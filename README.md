@@ -1,2 +1,2 @@
 # developer
-Снипеты по программированию PHP/BITRIX/JS/JQUERY/PUTHON
+Снипеты по программированию PHP/BITRIX/JS/JQUERY/PYTHON
