@@ -21,8 +21,8 @@ https://dev.1c-bitrix.ru/community/webdev/user/11948/blog/4728/  - компле�
 
 так же отдельно в мою документацию   
 https://dev.1c-bitrix.ru/support/forum/forum6/topic76921/ - применение купона  
-https://mrcappuccino.ru/blog/post/work-with-basket-bitrix-d7 -- корзина
-https://mrcappuccino.ru/blog/post/work-with-order-bitrix-d7 - заказы
+https://mrcappuccino.ru/blog/post/work-with-basket-bitrix-d7 -- корзина  
+https://mrcappuccino.ru/blog/post/work-with-order-bitrix-d7 - заказы  
 https://github.com/SidiGi/bitrix-info/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0-(d7)
 https://gdecider.github.io/bx_back-code-style.html -- много полезного  
 https://pai-bx.com/wiki/1c-bitrix/2289-example-of-booking-on-d7/  
