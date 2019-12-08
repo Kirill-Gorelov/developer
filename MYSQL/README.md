@@ -29,3 +29,16 @@ mysqldump -u [username] -p [password] [database] > [dump_name.sql]
 
 // вывести одинаковые значения  
 select email from block_users t1 where exists (select 1 from block_users t2 where t1.email=t2.email and t1.uid<>t2.uid)   
+
+<hr>  
+CREATE TABLE `copy` SELECT * FROM `origin` // копия отдельной таблицы  
+SELECT `cur`, count(`cur`) FROM `currencies` Group by `cur` having Count(*) > 1  
+
+TRUNCATE TABLE `fff`  
+DROP TABLE `coins`  
+
+Если таблица не существует, вы можете создать ее с такой же схемой:  
+CREATE TABLE table2 LIKE table1;  
+Затем, чтобы скопировать данные:  
+
+INSERT INTO table2 SELECT * FROM table1  
