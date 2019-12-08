@@ -1,0 +1,8 @@
+[# MySQL: Полный список часто используемых и полезных команд](https://artkiev.com/blog/mysql-full-list-commands.htm)  
+[# MySQL: Извлечение из дампа только структуры](https://artkiev.com/blog/mysql-dump-extract-one-table.htm)  
+[# MySQL - выбираем тип хранения данных MyISAM или InnoDB](https://artkiev.com/blog/mysql-myisam-or-innobd.htm)  
+[# Клонирование таблиц в MySQL](https://artkiev.com/blog/mysql-clone-table.htm)  
+[# MySQL - конвертация базы из Win-1251 в UTF-8](https://artkiev.com/blog/mysql-cp1251-to-utf8.htm)  
+[[Сравнение таблиц в MySQL](https://artkiev.com/blog/mysql-compare-table.htm)](https://artkiev.com/blog/mysql-compare-table.htm)  
+[[Как узнать самые ненужные индексы в MySQL](https://artkiev.com/blog/mysql-unnecessary-indexes.htm)](https://artkiev.com/blog/mysql-unnecessary-indexes.htm)  
+[[MySQL - удаление одним запросом записей в нескольких таблицах](https://artkiev.com/blog/mysql-one-query-delete.htm)](https://artkiev.com/blog/mysql-one-query-delete.htm)  

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+### Переменные
+TIME=`date +%Y-%m-%d`
+
+# что бы сделать архи не всего деревера, а только конкретной папки перейдем в нужную директорию
+cd /opt/lampp/htdocs/
+# Что бэкапить
+WHAT=apiscreen
+# Куда класть бэкап
+WHERE=backup_test
+# Куда копировать бэкап, если нужно
+COPY=backup_test2
+
+### Сам бэкап
+# Архивация нужного каталога в файл
+tar -cvpzf $WHERE/$TIME.tgz --exclude=public/  $WHAT > /dev/null
+# Копировать  файл бэкапа на шару
+# cp $WHERE/$TIME.tgz $COPY
+# Удалить файлы бэкапов месячной давности в обоих каталогах
+find $WHERE -mtime +30 -print -delete
+# find $COPY -mtime +30 -print -delete

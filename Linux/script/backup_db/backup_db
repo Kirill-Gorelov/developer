@@ -1,0 +1,29 @@
+#!/bin/sh
+########################
+### Переменные
+# Текущая дата
+TIME=`date +%Y-%m-%d`
+# Логин пользователя мускула
+USER=root
+# Пароль пользователя мускула
+PASS=root_password
+# Куда кладем бэкап
+WHERE=/home/backup/mysql
+# Куда копируем бэкап (бэкапов много не бывает:)
+COPY=/dyrectory/mysql
+########################
+### Базы которые надо бэкапить
+for base in base_name1 base_name2
+do
+########################
+### Сам бэкап
+# Делаем дамп баз
+mysqldump -u$USER -p$PASS -B $base > $WHERE/$base-$TIME.sql
+########################
+### Дополнительные команды
+# Копируем дампы 
+cp $WHERE/$base-$TIME.sql $COPY
+# Удаляем файлы месячной давности
+find $WHERE -mtime +30 -print -delete
+find $COPY -mtime +30 -print -delete
+done
