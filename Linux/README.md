@@ -20,15 +20,38 @@
 
 ## Управление пакетами
 
-[Проблемы с зависимостями](https://help.ubuntu.ru/wiki/%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC_%D1%81_%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8F%D0%BC%D0%B8)
-
-[Управление пакетами](http://rus-linux.net/nlib.php?name=/MyLDP/BOOKS/ubuntu_hacks_ru/ubuntuhack54.html)
+[Проблемы с зависимостями](https://help.ubuntu.ru/wiki/%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC_%D1%81_%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8F%D0%BC%D0%B8)   
+[Управление пакетами](http://rus-linux.net/nlib.php?name=/MyLDP/BOOKS/ubuntu_hacks_ru/ubuntuhack54.html)   
+[Как удалить пакеты помеченные dpkg как rc](http://prostoblog-unit.blogspot.com/2015/07/dpkg-rc.html)  
+[Очистка Linux-системы Debian/Ubuntu от файлов, оставшихся после удаления пакетов](https://www.nixp.ru/recipes/50.html)  
+[Памятка по управлению пакетами в Debian и Ubuntu](https://eax.me/debian-packages/)  
+[Xargs: многообразие вариантов использования](https://habr.com/ru/company/selectel/blog/248207/)  
 
 
 ```
 # dpkg —list
 # dpkg —info packageName
 # apt-get remove packageName
+```
+
+## Обновление  
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade
+```
+
+## Вывести список программ  
+```
+dpkg -l
+dpkg -l > /home/kirill/d/list.txt
+dpkg --get-selections | grep -v deinstall > /home/kirill/d/list.txt
+```
+
+### Удаление программ  
+```
+sudo apt-get remove checkbox
+sudo apt autoremove checkbox
 ```
 
 ## Команды LINUX  
