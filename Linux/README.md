@@ -1,35 +1,22 @@
 ## Бэкап сайта
 
- Скрипт `backup_site` делает копию всего сайта, без исключения.
-
+Скрипт `backup_site` делает копию всего сайта, без исключения.  
 Скрипт `backup_site_2` делает копию всего сайта, с исключением каталогов(пока не работает)  
 
 [Сделать БЭКАП и отправить на Я.Диск](https://serveradmin.ru/bekap-sayta-wordpress-na-yandeks-disk/)  
 [еще про бэкап](https://notessysadmin.com/bekap-linux-pri-pomoshhi-tar)  
 
-
-  
-
 >идеи. Можно отправить бэкапы на другие ФО или сделать себе уведомление на почту, что сделал бэкап.
 
-  
 
 ## Бэкап БД
 
-  
+Скрипт `backup_db`  
 
-Скрипт `backup_db`
-
-  
-  
 
 ##### Обязательно настроить свои пути
 
-  
-
 <hr>
-
-  
 
 ## Управление пакетами
 
@@ -37,16 +24,11 @@
 
 [Управление пакетами](http://rus-linux.net/nlib.php?name=/MyLDP/BOOKS/ubuntu_hacks_ru/ubuntuhack54.html)
 
-  
 
 ```
-
 # dpkg —list
-
 # dpkg —info packageName
-
 # apt-get remove packageName
-
 ```
 
 ## Команды LINUX  
@@ -70,15 +52,19 @@
 [https://omgubuntu.ru/25-primierov-ispolzovaniia-komandy-find-dlia-nachinaiushchikh-znakomstvo-s-linux/](https://omgubuntu.ru/25-primierov-ispolzovaniia-komandy-find-dlia-nachinaiushchikh-znakomstvo-s-linux/)  
 [https://losst.ru/komanda-find-v-linux](https://losst.ru/komanda-find-v-linux)  
 
+
 ls |wc -l - подсчет количества файлов в папке  
 sudo lshw -class memory - моя оперативка  
 
+```
 du -d 1 -h - размер файлов в папке  
 du -h|sort -r  
 du -h|sort -n  
+```
 
 [настройка xampp](http://gearmobile.github.io/virtual-host-xampp-linux-mint/)    
 
+```
 find . -name "*.DOCX" -delete  
 find . -name "*.csv" -delete  
 find . -name "*.mp4" -delete  
@@ -108,3 +94,4 @@ sudo fuser -vki /var/lib/dpkg/lock
 sudo dpkg --configure -a  
 sudo rm /var/lib/dpkg/lock - удаляем в крайнем случае  
 sudo dpkg --configure -a - потом снова переконфигурируем  
+```
