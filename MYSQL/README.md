@@ -42,10 +42,11 @@ select email from block_users t1 where exists (select 1 from block_users t2 wher
 ```
 
 <hr>  
+
 ```sql
 CREATE TABLE `copy` SELECT * FROM `origin` // копия отдельной таблицы  
 SELECT `cur`, count(`cur`) FROM `currencies` Group by `cur` having Count(*) > 1  
-```sql
+```
 
 ```sql
 TRUNCATE TABLE `fff`  
