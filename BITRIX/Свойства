@@ -1,0 +1,93 @@
+var arr = [];
+document.querySelectorAll('.bx-digit-cell').forEach(function(element){
+    //console.log(element.innerHTML);
+    if (document.getElementById('PROPERTY_VALUES_XML_'+element.innerHTML) != null) {
+        let v = document.getElementById('PROPERTY_VALUES_XML_'+element.innerHTML).value;
+        //console.log(v);
+        arr.push(v);
+    }
+});
+
+console.log(arr);
+
+//
+var arr = [];
+document.querySelectorAll('.bx-digit-cell').forEach(function(element){
+    //console.log(element.innerHTML);
+    if (document.getElementById('PROPERTY_VALUES_XML_'+element.innerHTML) != null) {
+        let v = document.getElementById('PROPERTY_VALUES_VALUE_'+element.innerHTML).value;
+        //console.log(v);
+        arr.push(v);
+    }
+});
+
+console.log(arr);
+
+
+//***************************** */
+//состав
+var arr = ["velvet", "costume_jewelry", "beads", "hematite", "tree", "pearl", "skin", "brass", "copper", "metal", "natural_stones", "polymer_clay", "silver", "spinel", "jewelry_steel"];
+var n = 0;//если уже есть несколько свойств
+var nn = 0;//если уже есть несколько свойств
+var count = arr.length;//если пустое свойства
+for (let index = 0; index < count; index++) {
+    document.getElementById('propedit_add_btn').click();
+}
+
+
+
+arr.forEach(function(element){
+    document.getElementById('PROPERTY_VALUES_XML_n'+n).value = element;
+    n++;
+});
+
+//
+var arr =  ["Бархат", "Бижутерный сплав ", "Бисер", "Гематит", "Дерево", "Жемчуг", "Кожа", "Латунь", "Медь", "Металл", "Натуральные камни ", "Полимерная глина", "Серебро", "Шпинель", "Ювелирная сталь"];
+
+
+arr.forEach(function(element){
+    document.getElementById('PROPERTY_VALUES_VALUE_n'+nn).value = element;
+    nn++;
+});
+
+//бренд
+var arr = ["anat", "anna_slavutina", "bngl", "byckovski", "ceramicbyava", "dasha_nachinkina", "dore_art", "e_g_m", "ekaterina_tolstaya", "ezhen", "fjord", "hairytale_stories", "honey_hany", "irina_volchek", "kalenik", "karavai", "kv_mode", "label_d", "lisa_smith", "maevsky", "mdclutch", "mechta_babaeva", "ms_marble", "natasha_gelb", "nevermind_jewelry", "vedovka", "waves_gems", "yauheniya_belskaya"];
+var n = 0;//если уже есть несколько свойств
+var nn = 0;//если уже есть несколько свойств
+var count = arr.length - 5 - n;//если пустое свойства
+for (let index = 0; index < count; index++) {
+    document.getElementById('propedit_add_btn').click();
+}
+
+//n = 0;
+arr.forEach(function(element){
+    document.getElementById('PROPERTY_VALUES_XML_n'+n).value = element;
+    n++;
+});
+
+var arr = ["ANAT", "ANNA SLAVUTINA ", "BNGL", "BYCKOVSKI", "CERAMICBYAVA", "DASHA NACHINKINA", "DORE ART", "E.G.M.", "EKATERINA TOLSTAYA", "EZHEN", "FJORD", "HAIRYTALE STORIES", "HONEY HANY", "IRINA VOLCHEK", "KALENIK", "KARAVAI", "KV MODE", "LABEL D", "LISA SMITH", "MAEVSKY", "MDclutch", "MECHTA BABAEVA", "MS. MARBLE ", "NATASHA GELB", "NEVERMIND JEWELR", "VEDOVKA", "WAVES&GEMS", "YAUHENIYA BELSKAYA"];
+
+arr.forEach(function(element){
+    document.getElementById('PROPERTY_VALUES_VALUE_n'+nn).value = element;
+    nn++;
+});
+
+//цвет
+var arr = ["pink", "beige", "white", "indianred", "blue", "green", "goldenrod", "brown", "silver", "gray", "blue", "purple", "peru"];
+var n = 2;//если уже есть несколько свойств
+var nn = 2;//если уже есть несколько свойств
+var count = arr.length;//если пустое свойства
+for (let index = 0; index < count; index++) {
+    document.getElementById('propedit_add_btn').click();
+}
+
+arr.forEach(function(element){
+    document.getElementById('PROPERTY_VALUES_XML_n'+n).value = element;
+    n++;
+});
+
+var arr = ["Розовый", "Бежевый", "Белый", "Бордовый", "Голубой", "Зеленый", "Золотой", "Коричневый", "Серебряный", "Серый", "Синий", "Фиолетовый", "Бронзовый микс"];
+arr.forEach(function(element){
+    document.getElementById('PROPERTY_VALUES_VALUE_n'+nn).value = element;
+    nn++;
+});
