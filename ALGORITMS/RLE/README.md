@@ -1,0 +1,3 @@
+## RLE
+
+ААВBBCCCCCC => A2B6C
