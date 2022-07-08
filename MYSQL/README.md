@@ -62,3 +62,21 @@ CREATE TABLE table2 LIKE table1;
 ```sql
 INSERT INTO table2 SELECT * FROM table1 
 ``` 
+
+
+Вывести размер таблиц в БД с сортировкой по уменьшения
+```sql
+SELECT table_name AS `Table`, round(((data_length + index_length) / 1024 / 1024), 2) `Size in MB` FROM information_schema.TABLES WHERE table_schema = "имя_БД" ORDER BY `Size in MB` DESC
+```
+
+Вывести размер отдельной таблицы в БД
+```sql
+SELECT 
+    table_name AS `Table`, 
+    round(((data_length + index_length) / 1024 / 1024), 2) `Size in MB` 
+FROM information_schema.TABLES 
+WHERE table_schema = "имя_БД"
+    AND table_name = "имя_таблицы";
+```
+
+> источник https://pacificsky.ru/recepty/sql/mysql/140-mysql-kak-uznat-razmer-tablicy-v-baze-dannyh.html
