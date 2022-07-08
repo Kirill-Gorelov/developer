@@ -79,4 +79,26 @@ WHERE table_schema = "имя_БД"
     AND table_name = "имя_таблицы";
 ```
 
+Вывести все тяженые таблицы из всех БД
+```sql
+SELECT 
+     table_schema as `Database`, 
+     table_name AS `Table`, 
+     round(((data_length + index_length) / 1024 / 1024), 2) `Size in MB` 
+FROM information_schema.TABLES 
+ORDER BY (data_length + index_length) DESC;
+```
+
 > источник https://pacificsky.ru/recepty/sql/mysql/140-mysql-kak-uznat-razmer-tablicy-v-baze-dannyh.html
+
+
+Вывести размеб всех БД по уменьшению
+```sql 
+SELECT table_schema "database_name", sum( data_length + index_length )/1024/1024 "database size in MB" FROM information_schema.TABLES GROUP BY table_schema ORDER BY `database size in MB` DESC
+```
+
+Вывести размер только одной БД  
+```sql
+SELECT table_schema "database_name", sum( data_length + index_length )/1024/1024 "database size in MB" FROM information_schema.TABLES WHERE table_schema="имя_БД"
+```
+>Источник https://vds-admin.ru/mysql/%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80-%D0%B1%D0%B0%D0%B7%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C-mysql
