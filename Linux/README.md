@@ -79,11 +79,11 @@ sudo apt autoremove checkbox
 ls |wc -l - подсчет количества файлов в папке  
 sudo lshw -class memory - моя оперативка  
 
+### Вывести размер папок в текущей директории по уменьшению
+```sh
+du -s *|sort -nr|cut -f 2-|while read a;do du -hs $a;done
 ```
-du -d 1 -h - размер файлов в папке  
-du -h|sort -r  
-du -h|sort -n  
-```
+
 
 [настройка xampp](http://gearmobile.github.io/virtual-host-xampp-linux-mint/)    
 
