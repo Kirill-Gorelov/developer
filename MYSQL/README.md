@@ -6,6 +6,7 @@
 [[Сравнение таблиц в MySQL](https://artkiev.com/blog/mysql-compare-table.htm)](https://artkiev.com/blog/mysql-compare-table.htm)  
 [[Как узнать самые ненужные индексы в MySQL](https://artkiev.com/blog/mysql-unnecessary-indexes.htm)](https://artkiev.com/blog/mysql-unnecessary-indexes.htm)  
 [[MySQL - удаление одним запросом записей в нескольких таблицах](https://artkiev.com/blog/mysql-one-query-delete.htm)](https://artkiev.com/blog/mysql-one-query-delete.htm)  
+[[Если забыл пароль от root](https://help.reg.ru/support/hosting/bazy-dannykh/kak-sbrosit-root-parol-v-mysql)]
 
 ```sql
 /opt/lampp/bin/mysql -uroot -p  
